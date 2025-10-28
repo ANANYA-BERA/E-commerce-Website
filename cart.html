@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="cart.js"></script>
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">ShopEase</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html" class="active">Cart 🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- ===== Cart Section ===== -->
+  <section class="cart-page">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-summary"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopEase | Designed by Ananya Bera</p>
+  </footer>
+</body>
+</html>

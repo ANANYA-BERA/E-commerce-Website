@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ShopEase</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="#">Wishlist</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    </div>
+     <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+  </header>
+
+
+  <!-- ===== Filter & Sort ===== -->
+  <section class="controls">
+    <div class="filter">
+      <label for="category">Filter:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </div>
+
+    <div class="sort">
+      <label for="sort">Sort By:</label>
+      <select id="sort">
+        <option value="default">Default</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- ===== Product List ===== -->
+  <section class="product-list" id="product-list">
+    <!-- Products will be dynamically added via JS -->
+  </section>
+
+  <footer>
+    <p>© 2025 ShopEase | Designed by Ananya Bera</p>
+  </footer>
+</body>
+</html>

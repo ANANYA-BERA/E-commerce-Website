@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="checkout.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">ShopEase</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Checkout Section ===== -->
+  <section class="checkout-page">
+    <h2>Checkout</h2>
+    <form id="checkout-form">
+      <label>Name:</label>
+      <input type="text" id="name" required />
+
+      <label>Email:</label>
+      <input type="email" id="email" required />
+
+      <label>Address:</label>
+      <textarea id="address" rows="3" required></textarea>
+
+      <label>Payment Method:</label>
+      <select id="payment">
+        <option value="card">Credit/Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+
+      <button type="submit" class="btn">Confirm Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopEase | Designed by Ananya Bera</p>
+  </footer>
+</body>
+</html>
