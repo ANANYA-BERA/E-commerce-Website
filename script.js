@@ -13,11 +13,12 @@ const products = [
   { id: 11, name: "women's Accessories ", category: "accessories", price: 499, image: "images/womenAccessories02.jpg" },
   { id: 12, name: "women's Accessories ", category: "accessories", price: 349, image: "images/womenAccessories03.jpg" },
   { id: 13, name: "women's Accessories ", category: "accessories", price: 499, image: "images/womenAccessories04.jpg" },
-
-
-
-
-
+  { id: 14, name: "men's Accessories ", category: "accessories", price: 9549, image: "images/men's watch.jpeg" },
+  { id: 15, name: "men's Accessories ", category: "accessories", price: 449, image: "images/belt.jpeg" },
+  { id: 16, name: "men's Accessories ", category: "accessories", price: 899, image: "images/belt02.jpeg" },
+  
+  
+  
 ];
 
 const productList = document.getElementById("product-list");
