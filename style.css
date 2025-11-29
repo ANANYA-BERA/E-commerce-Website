@@ -29,12 +29,12 @@ body.dark {
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem 1.5rem;
   background: var(--bg-color);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .navbar .logo {
@@ -43,8 +43,66 @@ body.dark {
   color: var(--primary-color);
 }
 
-.nav-links{
-  padding-left: 43rem;
+#search-bar{
+  display: flex;
+  width: 400px;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  height: 35px;
+  align-items: center;
+  text-align: center;
+}
+
+#searchBox{
+  width: 400px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background:transparent ;
+  padding: 5px 25px;
+  font-size: 0.9rem;
+}
+
+#search-bar button{
+  font-size: 18px;
+  color: var(--primary-color);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin:0 10px;
+}
+
+.filterSort{
+  display: flex;
+  gap:10px;
+}
+
+.control{
+  display: flex;
+  align-items:baseline; ;
+}
+
+#category, #sort{
+  display: flex;
+  cursor: pointer;
+  align-items: baseline;
+}
+.control label{
+  font-size: 16px;
+}
+
+.control select{
+  max-width: 20px;
+  padding: 2px ;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
 }
 .nav-links a {
   margin: 0 1rem;
@@ -64,7 +122,7 @@ body.dark {
   border: none;
   background: transparent;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--primary-color);
   font-size: 1.2rem;
 }
 

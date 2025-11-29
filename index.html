@@ -12,13 +12,20 @@
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">ShopEase</div>
+    
+    <div id="search-bar">
+      <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
+      <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    
    <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="products.html">Products</a>
       <a href="#">Wishlist</a>
       <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    
+      <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
     </div>
-    <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
   </header>
 
   <!-- Hero Section -->

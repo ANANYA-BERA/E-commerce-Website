@@ -12,20 +12,11 @@
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">ShopEase</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="products.html" class="active">Products</a>
-      <a href="#">Wishlist</a>
-      <a href="cart.html">Cart <span id="cart-count">0</span></a>
-    </div>
-     <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
-  </header>
 
-
-  <!-- ===== Filter & Sort ===== -->
-  <section class="controls">
-    <div class="filter">
-      <label for="category">Filter:</label>
+    
+    <div class="filterSort">
+    <div class="control">
+      <label for="category">Filter</label>
       <select id="category">
         <option value="all">All</option>
         <option value="men">Men</option>
@@ -34,15 +25,33 @@
       </select>
     </div>
 
-    <div class="sort">
-      <label for="sort">Sort By:</label>
+    <div class="control">
+      <label for="sort">Sort By</label>
       <select id="sort">
         <option value="default">Default</option>
         <option value="low-high">Price: Low to High</option>
         <option value="high-low">Price: High to Low</option>
       </select>
     </div>
-  </section>
+
+    <div id="search-bar">
+      <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
+      <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+  </div>
+
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="#">Wishlist</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    
+     <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+  </header>
 
   <!-- ===== Product List ===== -->
   <section class="product-list" id="product-list">
