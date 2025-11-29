@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShopEase - Products</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style101.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script defer src="script.js"></script>
 </head>
@@ -15,25 +15,26 @@
 
     
     <div class="filterSort">
-    <div class="control">
-      <label for="category">Filter</label>
-      <select id="category">
-        <option value="all">All</option>
-        <option value="men">Men</option>
-        <option value="women">Women</option>
-        <option value="accessories">Accessories</option>
-      </select>
-    </div>
+      <div class="control">
+        <label for="category">Filter</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="accessories">Accessories</option>
+        </select>
+      </div>
 
-    <div class="control">
-      <label for="sort">Sort By</label>
-      <select id="sort">
-        <option value="default">Default</option>
-        <option value="low-high">Price: Low to High</option>
-        <option value="high-low">Price: High to Low</option>
-      </select>
+      <div class="control">
+        <label for="sort">Sort By</label>
+        <select id="sort">
+          <option value="default">Default</option>
+          <option value="low-high">Price: Low to High</option>
+          <option value="high-low">Price: High to Low</option>
+        </select>
+      </div>
     </div>
-
+    
     <div id="search-bar">
       <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
       <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>

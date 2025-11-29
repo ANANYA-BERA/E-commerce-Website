@@ -84,7 +84,7 @@ if (productList) {
 
 // Featured Products on Home Page
 if (featuredProducts) {
-  displayProducts(products.slice(0, 3), featuredProducts);
+  displayProducts(products.slice(0, 6), featuredProducts);
   updateCartCount();
 }
 

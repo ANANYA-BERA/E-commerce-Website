@@ -4,18 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShopEase | Your Favorite Online Store</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style101.css" />
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">ShopEase</div>
+    <button id="menu-toggle">
+      <i class="fa-solid fa-caret-down"></i></button>
+      <div class="logo">
+      <h1>ShopEase</h1>
+    </div>
     
     <div id="search-bar">
       <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
       <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
+       <button id="Profile"><i class="fa-regular fa-user"></i></button>
     </div>
     
    <div class="nav-links">
@@ -23,9 +30,9 @@
       <a href="products.html">Products</a>
       <a href="#">Wishlist</a>
       <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      </div>
+     
     
-      <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
-    </div>
   </header>
 
   <!-- Hero Section -->
