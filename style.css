@@ -35,12 +35,28 @@ body.dark {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 8px #cf808067;
 }
 
-.navbar .logo {
+.logo{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.logo h1{
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
+}
+
+.logo button{
+  display: none;
+  font-size: 20px;
+  color: var(--primary-color);
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 #search-bar{
@@ -79,19 +95,18 @@ body.dark {
 
 .control{
   display: flex;
-  align-items:baseline; ;
 }
 
 #category, #sort{
   display: flex;
   cursor: pointer;
-  align-items: baseline;
 }
 .control label{
   font-size: 16px;
 }
 
 .control select{
+  margin-top: 15px;
   max-width: 20px;
   padding: 2px ;
   border: none;
@@ -104,11 +119,21 @@ body.dark {
   display: flex;
   align-items: center;
 }
-.nav-links a {
+.nav-links a{
   margin: 0 1rem;
   text-decoration: none;
   color: var(--text-color);
   transition: color 0.3s;
+}
+
+#cart {
+  margin: 0 1rem;
+  font-size: 20px;
+  display: flex;
+  color: #fa4242;
+  cursor: pointer;
+  border: none;
+  background: transparent;
 }
 
 .nav-links a:hover,
@@ -122,7 +147,7 @@ body.dark {
   border: none;
   background: transparent;
   cursor: pointer;
-  color: var(--primary-color);
+  color: #fa4242;
   font-size: 1.2rem;
 }
 
@@ -206,7 +231,7 @@ body.dark {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
   color: black;
 }
 
@@ -312,6 +337,17 @@ input, textarea, select {
   background: var(--secondary-color);
 }
 
+
+#cart-page{
+  display: none;
+  position: fixed;
+  background-color: var(--bg-color);
+  width: 600px;
+  height: 100vh;
+  padding: 25px 10px;
+  transform: translate(-50%, -50%);
+}
+
 /* Footer */
 footer {
   background: linear-gradient(to right, #ffafbd, #ffc3a0);
@@ -333,4 +369,39 @@ footer {
 
 .socials a:hover {
   color: var(--bg-color);
+}
+
+
+/* Responsive */
+@media (max-width: 360px) {
+
+  .body{
+    max-width: 360px;
+  }
+
+  .navbar {
+    display: flex;
+    height: 60px;
+  }
+
+  .logo h1{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  #search-bar{
+    border: none;
+  }
+
+  #search-bar button{
+    display: block;
+  }
+
+
+  #searchBox{
+    display: none;
+  }
 }

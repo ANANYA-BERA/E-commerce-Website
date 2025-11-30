@@ -4,17 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShopEase - Products</title>
-  <link rel="stylesheet" href="style101.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">ShopEase</div>
+      <!-- <button id="menu-toggle"  onclick="openMenu()"> -->
+        <!-- <i class="fa-solid fa-caret-down"></i></button> -->
+        <div class="logo">
+        <h1>ShopEase</h1>
+      </div>
 
-    
-    <div class="filterSort">
+      <div class="filterSort">
       <div class="control">
         <label for="category">Filter</label>
         <select id="category">
@@ -34,25 +37,22 @@
         </select>
       </div>
     </div>
-    
-    <div id="search-bar">
-      <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
-      <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
+      
+      <div id="search-bar">
+        <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
+        <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
 
-  </div>
-
-
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="products.html" class="active">Products</a>
+       <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
       <a href="#">Wishlist</a>
-      <a href="cart.html">Cart <span id="cart-count">0</span></a>
-    
-     <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+      <a href="#">Profile</a>
+      <button id="cart"><i class="fa-brands fa-opencart"></i></button>
     </div>
 
   </header>
+
 
   <!-- ===== Product List ===== -->
   <section class="product-list" id="product-list">

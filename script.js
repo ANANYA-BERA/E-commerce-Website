@@ -27,6 +27,14 @@ const cartCount = document.getElementById("cart-count");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+
+// Open Menu Bar
+// function openMenu() {
+//   const sideBar = document.getElementById("side-bar");
+//   if (sideBar) sideBar.style.display = "flex";
+// }
+
+
 // Display products dynamically
 function displayProducts(items, target) {
   if (!target) return;
@@ -42,6 +50,12 @@ function displayProducts(items, target) {
     `;
   });
 }
+
+
+function openCart(){
+   const openCart = document.getElementById("cart-page").style.display = "block";
+  }
+
 
 // Add to cart
 function addToCart(id) {
@@ -84,7 +98,7 @@ if (productList) {
 
 // Featured Products on Home Page
 if (featuredProducts) {
-  displayProducts(products.slice(0, 6), featuredProducts);
+  displayProducts(products.slice(0, 5), featuredProducts);
   updateCartCount();
 }
 
@@ -105,3 +119,9 @@ if (themeToggle) {
     themeToggle.textContent = theme === "dark" ? "☀" : "🌙";
   });
 }
+
+
+
+
+
+

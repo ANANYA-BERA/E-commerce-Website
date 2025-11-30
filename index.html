@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShopEase | Your Favorite Online Store</title>
-  <link rel="stylesheet" href="style101.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,27 +13,32 @@
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <button id="menu-toggle">
-      <i class="fa-solid fa-caret-down"></i></button>
-      <div class="logo">
-      <h1>ShopEase</h1>
-    </div>
-    
-    <div id="search-bar">
-      <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
-      <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
-       <button id="Profile"><i class="fa-regular fa-user"></i></button>
-    </div>
-    
-   <div class="nav-links">
+      <!-- <button id="menu-toggle"  onclick="openMenu()"> -->
+        <!-- <i class="fa-solid fa-caret-down"></i></button> -->
+        <div class="logo">
+        <h1>ShopEase</h1>
+      </div>
+      
+      <div id="search-bar">
+        <input type="text" id="searchBox" autocomplete="off" placeholder="Search products....">
+        <button onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+       <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="products.html">Products</a>
       <a href="#">Wishlist</a>
-      <a href="cart.html">Cart <span id="cart-count">0</span></a>
-      </div>
+      <a href="#">Profile</a>
+      <button id="cart" onclick="openCart()"><i class="fa-brands fa-opencart"></i></button>
+    </div>
+
+       
+  </header>
+
+ 
+    
      
     
-  </header>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -85,6 +90,14 @@
     </form>
   </section>
 
+<!-- cart-panel -->
+   <section id="cart-page">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-summary"></div>
+  </section>
+
+
   <!-- Footer -->
   <footer>
     <p>© 2025 ShopEase. All rights reserved.</p>
@@ -94,5 +107,7 @@
       <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
